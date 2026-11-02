@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff4f6">
+  <meta name="description" content="Belva's Dream - a little corner for big dreams.">
+
+  <title>Belva's Dream ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="#home" class="logo">✦ belva's <span>dream</span></a>
+
+  <button class="menu-toggle" id="menuToggle">☰</button>
+
+  <nav id="mainNav">
+    <a href="#home">home</a>
+    <a href="#write">write a dream</a>
+    <a href="#collection">my collection</a>
+    <a href="#gallery">gallery</a>
+  </nav>
+
+  <a href="#write" class="nav-button">start dreaming ♡</a>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+  <div class="hero-text">
+    <p class="eyebrow">✧ A LITTLE CORNER FOR BIG DREAMS</p>
+
+    <h1>
+      Your dreams<br>
+      deserve to <span>shine.</span>
+    </h1>
+
+    <p class="description">
+      Every dream begins with a little wish.
+      Write your hopes, save your goals, and
+      believe that beautiful things are coming.
+    </p>
+
+    <a href="#write" class="primary-button">
+      write your dream ♡
+    </a>
+
+    <p class="small-note">♡ dream big, start small, keep going.</p>
+  </div>
+
+  <div class="hero-art">
+    <div class="sun"></div>
+
+    <div class="dream-paper">
+      <p>MY LITTLE REMINDER ✧</p>
+
+      <h2>
+        One day,<br>
+        it will be<br>
+        <span>my reality.</span>
+      </h2>
+
+      <small>believe in your dreams ♡</small>
+    </div>
+
+    <span class="star star-one">✦</span>
+    <span class="star star-two">✧</span>
+    <span class="heart">♡</span>
+    <span class="flower">✿</span>
+  </div>
+
+</section>
+
+<div class="quote-strip">
+  ✿ &nbsp; your future is made of the little things you do today. &nbsp; ✿
+</div>
+
+<!-- WRITE DREAM -->
+<section class="section" id="write">
+
+  <div class="section-heading">
+    <p class="eyebrow">✧ PUT IT INTO WORDS</p>
+    <h2>Write your <span>dream.</span></h2>
+    <p>Give your dream a name and tell your story.</p>
+  </div>
+
+  <div class="write-layout">
+
+    <div class="form-card">
+
+      <form id="dreamForm">
+
+        <label for="dreamTitle">Dream title *</label>
+
+        <input
+          type="text"
+          id="dreamTitle"
+          placeholder="What is your dream?"
+          maxlength="70"
+          required
+        >
+
+        <div class="form-row">
+
+          <div>
+            <label for="dreamCategory">Category</label>
+
+            <select id="dreamCategory">
+              <option value="Education">🎓 Education</option>
+              <option value="Career">💼 Career</option>
+              <option value="Travel">✈️ Travel</option>
+              <option value="Family">🏡 Family</option>
+              <option value="Personal Growth">🌱 Personal Growth</option>
+              <option value="Other">⭐ Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="dreamWhen">When?</label>
+
+            <select id="dreamWhen">
+              <option value="Someday">Someday</option>
+              <option value="Soon">Soon</option>
+              <option value="This year">This year</option>
+              <option value="In the future">In the future</option>
+            </select>
+          </div>
+
+        </div>
+
+        <label for="dreamStory">Tell us about your dream *</label>
+
+        <textarea
+          id="dreamStory"
+          rows="5"
+          maxlength="700"
+          placeholder="Dear future me, this is what I hope for..."
+          required
+        ></textarea>
+
+        <div class="textarea-foot">
+          <span>write from your heart ♡</span>
+          <span id="charCount">0 / 700</span>
+        </div>
+
+        <button type="submit" class="primary-button">
+          save my dream ✧
+        </button>
+
+        <p class="privacy-note">
+          🔒 Saved in this browser only.
+        </p>
+
+        <p id="formMessage" class="form-message"></p>
+
+      </form>
+
+    </div>
+
+    <div class="note-card">
+      <span class="note-icon">♡</span>
+
+      <p class="eyebrow">A NOTE FOR YOU</p>
+
+      <h3>
+        Don't be afraid<br>
+        to dream <span>bigger.</span>
+      </h3>
+
+      <p>
+        Some dreams take time, and that's okay.
+        Keep believing in yourself and your journey.
+      </p>
+
+      <div class="note-decoration">✧ ✿ ✧</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COLLECTION -->
+<section class="section collection-section" id="collection">
+
+  <div class="section-heading">
+    <p class="eyebrow">✧ YOUR OWN LITTLE UNIVERSE</p>
+    <h2>My dream <span>collection.</span></h2>
+  </div>
+
+  <div class="collection-tools">
+
+    <input
+      type="search"
+      id="dreamSearch"
+      placeholder="Search your dreams..."
+    >
+
+    <select id="categoryFilter">
+      <option value="All">All categories</option>
+      <option value="Education">Education</option>
+      <option value="Career">Career</option>
+      <option value="Travel">Travel</option>
+      <option value="Family">Family</option>
+      <option value="Personal Growth">Personal Growth</option>
+      <option value="Other">Other</option>
+    </select>
+
+  </div>
+
+  <p id="dreamCount" class="dream-count">0 dreams saved</p>
+
+  <div class="dream-grid" id="dreamList">
+
+    <div class="empty-state">
+      <span>☁</span>
+      <h3>Your dream journal is waiting...</h3>
+      <p>Write your first dream and it will appear here.</p>
+      <a href="#write">add your first dream ↗</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+
+  <div class="section-heading">
+    <p class="eyebrow">✧ LITTLE WISHES, BIG POSSIBILITIES</p>
+    <h2>Dream <span>gallery.</span></h2>
+    <p>A little inspiration for your beautiful journey.</p>
+  </div>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-card pink-card">
+      <span>✿</span>
+      <small>01 / EDUCATION</small>
+      <h3>Learn something<br>that changes<br>your world.</h3>
+      <p>Keep being curious ♡</p>
+    </div>
+
+    <div class="gallery-card yellow-card">
+      <span>☼</span>
+      <small>02 / ADVENTURE</small>
+      <h3>See places<br>you've only<br>dreamed of.</h3>
+      <p>The world is waiting ✈</p>
+    </div>
+
+    <div class="gallery-card lilac-card">
+      <span>♡</span>
+      <small>03 / PERSONAL</small>
+      <h3>Become someone<br>your younger self<br>would admire.</h3>
+      <p>Grow at your own pace.</p>
+    </div>
+
+  </div>
+
+  <p class="gallery-note">
+    Inspiration cards only. Personal dream entries stay in your browser.
+  </p>
+
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+
+  <p>to the girl with a thousand dreams...</p>
+
+  <h2>
+    Keep dreaming.<br>
+    <span>Your time will come.</span>
+  </h2>
+
+  <a href="#write" class="light-button">
+    write another dream ♡
+  </a>
+
+  <p class="closing-stars">✦ &nbsp; ✧ &nbsp; ✦</p>
+
+</section>
+
+</main>
+
+<footer>
+  <a href="#home" class="logo">✦ belva's <span>dream</span></a>
+
+  <p>made with a little love & lots of dreams ♡</p>
+
+  <a href="#home">back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
